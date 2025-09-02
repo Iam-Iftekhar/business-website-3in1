@@ -11,7 +11,8 @@
         .accent-blue { background-color: #457b9d; }
         .hover\:accent-blue-dark:hover { background-color: #37637d; }
         .text-accent-blue { color: #457b9d; }
-        .bg-restaurant-hero { background-image: url('https://placehold.co/1920x1080/457b9d/f1faee?text=Cool+Samurai+Restaurant'); }
+        .bg-restaurant-hero-1 { background-image: url('https://imgs.search.brave.com/K2-lhsHSS6JH2n7IRSZXl6BmcxBt_O37C_efkuaV7A0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE1LzU1LzEyLzc0/LzM2MF9GXzE1NTUx/Mjc0MDlfYml3eVV0/T25sa1M5V3BzSUNM/VjBzZFRLdm5aSVhj/NmguanBn'); }
+        .bg-restaurant-hero-2 { background-image: url('https://imgs.search.brave.com/J1ibPbHq92wM8YQF1ij36O7NDW4211G3ymBAv6KaaO8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTEy/NzcyMjMwOC9waG90/by92YWxlbnRpbmVz/LWRheS10YWJsZS1w/bGFjZS1zZXR0aW5n/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1vOGtKWnE0dTNf/Vy1DYnN3cjlmblcx/T0ZXYXlJVDdWNVVH/VzFCWXJwT3RZPQ'); }
         .ninja-logo {
             filter: invert(1);
         }
@@ -55,8 +56,8 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-[url('https://placehold.co/1920x1080/457b9d/f1faee?text=Our+Restaurant+Experience')] bg-cover bg-center h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
+    <!-- Hero Section 1 -->
+    <section class="relative bg-restaurant-hero-1 bg-cover bg-center h-screen flex items-center justify-center text-center">
         <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
         <div class="relative text-white p-6">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">A Culinary Journey Awaits</h1>
@@ -71,34 +72,24 @@
         <div class="text-center mb-12">
             <h2 class="text-4xl md:text-5xl font-extrabold text-accent-blue mb-4">Our Menu</h2>
             <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-                Explore a variety of traditional and modern Japanese dishes. 
+                Discover a wide selection of our finest dishes, from fresh sushi to hearty ramen.
             </p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Menu Item 1 -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/f1faee/457b9d?text=Sushi+Platter" alt="Sushi Platter" class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="text-2xl font-bold text-slate-800 mb-2">Sushi Platter</h3>
-                <p class="text-slate-600 mb-4">A fresh selection of nigiri, sashimi, and maki rolls.</p>
-                <span class="text-xl font-bold text-accent-blue">$25.99</span>
-            </div>
-            <!-- Menu Item 2 -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/f1faee/457b9d?text=Ramen+Bowl" alt="Ramen Bowl" class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="text-2xl font-bold text-slate-800 mb-2">Tonkotsu Ramen</h3>
-                <p class="text-slate-600 mb-4">Rich and creamy pork bone broth with chashu pork and a soft-boiled egg.</p>
-                <span class="text-xl font-bold text-accent-blue">$18.50</span>
-            </div>
-            <!-- Menu Item 3 -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/400x250/f1faee/457b9d?text=Tempura+Shrimp" alt="Tempura Shrimp" class="w-full h-48 object-cover rounded-lg mb-4">
-                <h3 class="text-2xl font-bold text-slate-800 mb-2">Assorted Tempura</h3>
-                <p class="text-slate-600 mb-4">Crispy, lightly battered shrimp and fresh vegetables.</p>
-                <span class="text-xl font-bold text-accent-blue">$14.00</span>
-            </div>
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden p-4 md:p-8">
+            <img src="https://imgs.search.brave.com/1aATgPMYxo9Gy4RgxodnENAC-7L7DdiD_5knmfGyKtE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGVtcGxhdGUu/bmV0LzQ0NzE4OC9N/b2Rlcm4tQ2FyZC1N/ZW51LVRlbXBsYXRl/LWVkaXQtb25saW5l/LnBuZw" alt="Restaurant menu items" class="w-full h-auto object-cover rounded-2xl">
         </div>
     </main>
+
+    <!-- Hero Section 2 -->
+    <section class="relative bg-restaurant-hero-2 bg-cover bg-center h-screen flex items-center justify-center text-center">
+        <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
+        <div class="relative text-white p-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Experience Our Atmosphere</h1>
+            <p class="text-lg md:text-2xl font-light max-w-3xl mx-auto">
+                Step into a world of serene elegance and modern Japanese design.
+            </p>
+        </div>
+    </section>
 
     <!-- Footer (Same for all pages) -->
     <footer class="bg-slate-900 text-slate-400 py-12 mt-20 rounded-t-3xl">
