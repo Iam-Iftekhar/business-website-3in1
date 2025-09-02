@@ -11,9 +11,15 @@
         .accent-blue { background-color: #457b9d; }
         .hover\:accent-blue-dark:hover { background-color: #37637d; }
         .text-accent-blue { color: #457b9d; }
-        .bg-home-hero { background-image: url('https://placehold.co/1920x1080/457b9d/f1faee?text=Cool+Samurai+Restaurant'); }
+        .bg-home-hero { background-image: url('https://images-na.ssl-images-amazon.com/images/I/81yX5y50f7L.jpg'); }
         .ninja-logo {
             filter: invert(1);
+        }
+        /* Media queries for responsive design */
+        @media (min-width: 575px) and (max-width: 2100px) {
+            .section-height {
+                min-height: 500px;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -69,33 +75,33 @@
     <!-- Main Body Sections -->
     <main class="container mx-auto px-4 py-16 md:py-24">
         <!-- Section Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div class="flex flex-col space-y-8 md:space-y-12">
             <!-- Restaurant Card -->
             <a href="restaurant.html" class="group block bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
-                <div class="h-64 overflow-hidden rounded-t-3xl">
-                    <img src="https://placehold.co/600x400/98C1D9/f1faee?text=Restaurant+Interior" alt="Restaurant Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                <div class="h-70 overflow-hidden rounded-t-2xl">
+                    <img src="https://img.freepik.com/premium-photo/interior-restaurant_961307-26290.jpg?semt=ais_incoming&w=740&q=80" alt="Restaurant Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
                 </div>
-                <div class="p-8 text-center">
+                <div class="p-8 text-center section-height">
                     <h2 class="text-3xl font-extrabold text-accent-blue mb-4">Restaurant</h2>
                     <p class="text-lg text-slate-600">Experience authentic Japanese cuisine in a modern, serene setting. </p>
                 </div>
             </a>
             <!-- Visa Processing Card -->
             <a href="visa.html" class="group block bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
-                <div class="h-64 overflow-hidden rounded-t-3xl">
-                    <img src="https://placehold.co/600x400/8B4513/f1faee?text=Visa+Application" alt="Visa Application" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                <div class="h-70 overflow-hidden rounded-t-3xl">
+                    <img src="https://img.freepik.com/free-photo/american-visa-document_1101-820.jpg?semt=ais_hybrid&w=740&q=80" alt="Visa Application" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
                 </div>
-                <div class="p-8 text-center">
+                <div class="p-8 text-center section-height">
                     <h2 class="text-3xl font-extrabold text-accent-blue mb-4">Visa Processing</h2>
                     <p class="text-lg text-slate-600">Effortlessly manage your visa applications with our expert guidance and reliable services.</p>
                 </div>
             </a>
             <!-- Import Card -->
             <a href="import.html" class="group block bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
-                <div class="h-64 overflow-hidden rounded-t-3xl">
-                    <img src="https://placehold.co/600x400/457b9d/f1faee?text=Importing+Goods" alt="Importing Goods" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                <div class="h-70 overflow-hidden rounded-t-3xl">
+                    <img src="https://img.freepik.com/premium-photo/business-logistic-import-export-transport-industry-transportation-logistic-network-distribution-growth-container-cargo-ship-trucks-industrial-cargo-freight-shipping_10221-42574.jpg?semt=ais_hybrid&w=740" alt="Importing Goods" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
                 </div>
-                <div class="p-8 text-center">
+                <div class="p-8 text-center section-height">
                     <h2 class="text-3xl font-extrabold text-accent-blue mb-4">Import</h2>
                     <p class="text-lg text-slate-600">Source high-quality products from around the world with our streamlined import services.</p>
                 </div>
@@ -136,7 +142,7 @@
             </div>
         </div>
         <div class="container mx-auto text-center mt-8">
-            <p class="text-slate-600 text-sm">&copy; 2025 Cool Samurai. All rights reserved.</p>
+            <p class="text-slate-600 text-sm">&copy; 2024 Cool Samurai. All rights reserved.</p>
         </div>
     </footer>
 
