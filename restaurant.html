@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Samurai - Restaurant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .accent-blue { background-color: #457b9d; }
+        .hover\:accent-blue-dark:hover { background-color: #37637d; }
+        .text-accent-blue { color: #457b9d; }
+        .bg-restaurant-hero { background-image: url('https://placehold.co/1920x1080/457b9d/f1faee?text=Cool+Samurai+Restaurant'); }
+        .ninja-logo {
+            filter: invert(1);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body class="bg-[#f1faee] text-slate-800">
+
+    <!-- Header (Same for all pages) -->
+    <header class="bg-[#f1faee] text-[#457b9d] py-6 px-4 md:px-8 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo and Name -->
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-slate-800 ninja-logo" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm-1.892 14.502c-.104.385-.183.743-.236 1.056-.053.313-.08.57-.08.771 0 .201.031.365.093.493s.15.228.257.29c.107.062.228.093.364.093.134 0 .26-.032.378-.095.117-.063.22-.162.308-.297.088-.135.152-.284.192-.448.041-.164.062-.317.062-.459 0-.175-.027-.372-.082-.591-.055-.219-.13-.427-.225-.623-.095-.196-.214-.37-.354-.521-.141-.151-.299-.272-.475-.362-.176-.09-.37-.156-.583-.198-.212-.042-.428-.063-.646-.063-.221 0-.441.026-.66.078-.22.052-.42.128-.598.228-.178.1-.33.22-.456.36-.126.14-.22.3-.284.479-.064.179-.096.367-.096.564 0 .197.032.394.096.591.064.197.147.382.25.555.103.173.23.328.38.467.15.138.318.252.503.342.185.09.38.156.586.198.207.042.417.063.633.063.221 0 .44-.026.657-.078.217-.052.417-.128.598-.228.181-.1.334-.22.457-.36.124-.14.218-.3.282-.479.064-.179.096-.367.096-.564 0-.197-.032-.394-.096-.591-.064-.197-.147-.382-.25-.555-.103-.173-.23-.328-.38-.467-.15-.138-.318-.252-.503-.342-.185-.09-.38-.156-.586-.198-.207-.042-.417-.063-.633-.063-.356 0-.67.06-1.02.179zM12 11c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></svg>
+                <a href="index.html" class="text-3xl font-extrabold tracking-widest text-[#457b9d]">COOL SAMURAI</a>
+            </div>
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-lg font-medium">
+                <a href="index.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Home</a>
+                <a href="restaurant.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Restaurant</a>
+                <a href="visa.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Visa Processing</a>
+                <a href="import.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Import</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-slate-800 hover:text-accent-blue focus:outline-none">
+                    <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4 text-center">
+            <a href="index.html" class="block text-slate-800 hover:text-accent-blue py-2">Home</a>
+            <a href="restaurant.html" class="block text-slate-800 hover:text-accent-blue py-2">Restaurant</a>
+            <a href="visa.html" class="block text-slate-800 hover:text-accent-blue py-2">Visa Processing</a>
+            <a href="import.html" class="block text-slate-800 hover:text-accent-blue py-2">Import</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-[url('https://placehold.co/1920x1080/457b9d/f1faee?text=Our+Restaurant+Experience')] bg-cover bg-center h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
+        <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
+        <div class="relative text-white p-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">A Culinary Journey Awaits</h1>
+            <p class="text-lg md:text-2xl font-light max-w-3xl mx-auto">
+                Savor the authentic tastes of Japan, crafted with care and tradition.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-accent-blue mb-4">Our Menu</h2>
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+                Explore a variety of traditional and modern Japanese dishes. 
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Menu Item 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/f1faee/457b9d?text=Sushi+Platter" alt="Sushi Platter" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-bold text-slate-800 mb-2">Sushi Platter</h3>
+                <p class="text-slate-600 mb-4">A fresh selection of nigiri, sashimi, and maki rolls.</p>
+                <span class="text-xl font-bold text-accent-blue">$25.99</span>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/f1faee/457b9d?text=Ramen+Bowl" alt="Ramen Bowl" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-bold text-slate-800 mb-2">Tonkotsu Ramen</h3>
+                <p class="text-slate-600 mb-4">Rich and creamy pork bone broth with chashu pork and a soft-boiled egg.</p>
+                <span class="text-xl font-bold text-accent-blue">$18.50</span>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/400x250/f1faee/457b9d?text=Tempura+Shrimp" alt="Tempura Shrimp" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-2xl font-bold text-slate-800 mb-2">Assorted Tempura</h3>
+                <p class="text-slate-600 mb-4">Crispy, lightly battered shrimp and fresh vegetables.</p>
+                <span class="text-xl font-bold text-accent-blue">$14.00</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Same for all pages) -->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-20 rounded-t-3xl">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Left Section: Location -->
+            <div>
+                <h3 class="text-2xl font-bold text-accent-blue mb-4">Location</h3>
+                <p class="text-slate-500 mb-2">123 Samurai St, Tokyo, Japan 100-0005</p>
+                <p class="text-slate-500">Phone: (123) 456-7890</p>
+            </div>
+            <!-- Middle Section: Payment Gateway Logos -->
+            <div class="flex flex-col items-center justify-center">
+                <h3 class="text-2xl font-bold text-accent-blue mb-4">We Accept</h3>
+                <div class="flex space-x-4">
+                    <img src="https://placehold.co/60x40/FFFFFF/457b9d?text=VISA" alt="Visa" class="h-10 w-auto rounded-lg">
+                    <img src="https://placehold.co/60x40/FFFFFF/457b9d?text=MC" alt="Mastercard" class="h-10 w-auto rounded-lg">
+                    <img src="https://placehold.co/60x40/FFFFFF/457b9d?text=AMEX" alt="American Express" class="h-10 w-auto rounded-lg">
+                </div>
+            </div>
+            <!-- Right Section: Contact Info & Social Media -->
+            <div class="text-center md:text-right">
+                <h3 class="text-2xl font-bold text-accent-blue mb-4">Contact Us</h3>
+                <p class="text-slate-500 mb-2">Email: info@coolsamurai.com</p>
+                <div class="flex justify-center md:justify-end space-x-4 text-slate-500 mt-4">
+                    <a href="#" class="hover:text-accent-blue transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.258 1H2.74C1.784 1 1 1.784 1 2.742v18.516C1 22.216 1.784 23 2.742 23h9.096v-7.989h-2.12v-2.584h2.12V9.508c0-2.094 1.272-3.238 3.136-3.238.895 0 1.666.067 1.898.096v2.197h-1.303c-1.026 0-1.229.489-1.229 1.206v1.597h2.576l-.333 2.584h-2.243V23h4.942C22.216 23 23 22.216 23 21.258V2.742C23 1.784 22.216 1 21.258 1z"/></svg>
+                    </a>
+                    <a href="#" class="hover:text-accent-blue transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.177.062 1.8.236 2.222.463.535.295.945.705 1.24 1.24.227.422.4.996.464 2.228.058 1.267.069 1.647.069 4.85a10 10 0 01-.069 4.85c-.062 1.177-.236 1.8-.463 2.222-.295.535-.705.945-1.24 1.24-.422.227-.996.4-2.228.464-1.267.058-1.647.069-4.85.069s-3.584-.012-4.85-.069c-1.177-.062-1.8-.236-2.222-.463-.535-.295-.945-.705-1.24-1.24-.227-.422-.4-.996-.464-2.228-.058-1.267-.069-1.647-.069-4.85s.012-3.584.069-4.85c.062-1.177.236-1.8.463-2.222.295-.535.705-.945 1.24-1.24.422-.227.996-.4 2.228-.464 1.267-.058 1.647-.069 4.85-.069zm0 2.163c-3.15 0-3.531.01-4.764.065-1.1.048-1.503.2-1.848.384-.436.236-.723.523-.959.759-.236.236-.523.523-.759.959-.184.345-.336.748-.384 1.848-.055 1.233-.065 1.614-.065 4.764s.01 3.531.065 4.764c.048 1.1.2 1.503.384 1.848.236.436.523.723.759.959.236.236.523.523.959.759.345.184.748.336 1.848.384 1.233.055 1.614.065 4.764.065s3.531-.01 4.764-.065c1.1-.048 1.503-.2 1.848-.384.436-.236.723-.523.959-.759.236-.236.523-.523.759-.959.184-.345.336-.748.384-1.848.055-1.233.065-1.614.065-4.764s-.01-3.531-.065-4.764c-.048-1.1-.2-1.503-.384-1.848-.236-.436-.523-.723-.759-.959-.236-.236-.523-.523-.959-.759-.345-.184-.748-.336-1.848-.384-1.233-.055-1.614-.065-4.764-.065zm0 3.737c-3.324 0-6 2.676-6 6s2.676 6 6 6 6-2.676 6-6-2.676-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-center mt-8">
+            <p class="text-slate-600 text-sm">&copy; 2024 Cool Samurai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script for mobile menu toggle -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
