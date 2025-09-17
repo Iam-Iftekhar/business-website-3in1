@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Samurai - Visa Processing</title>
+    <title>Cool Samurai</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -11,9 +11,15 @@
         .accent-blue { background-color: #457b9d; }
         .hover\:accent-blue-dark:hover { background-color: #37637d; }
         .text-accent-blue { color: #457b9d; }
-        .bg-visa-hero { background-image: url('https://placehold.co/1920x1080/8B4513/f1faee?text=Visa+Processing+Services'); }
+        .bg-home-hero { background-image: url('https://images-na.ssl-images-amazon.com/images/I/81yX5y50f7L.jpg'); }
         .ninja-logo {
             filter: invert(1);
+        }
+        /* Media queries for responsive design */
+        @media (min-width: 575px) and (max-width: 2100px) {
+            .section-height {
+                min-height: 500px;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -34,8 +40,6 @@
             <div class="hidden md:flex items-center space-x-8 text-lg font-medium">
                 <a href="index.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Home</a>
                 <a href="restaurant.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Restaurant</a>
-                <a href="visa.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Visa Processing</a>
-                <a href="import.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Import</a>
             </div>
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
@@ -50,61 +54,54 @@
         <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4 text-center">
             <a href="index.html" class="block text-slate-800 hover:text-accent-blue py-2">Home</a>
             <a href="restaurant.html" class="block text-slate-800 hover:text-accent-blue py-2">Restaurant</a>
-            <a href="visa.html" class="block text-slate-800 hover:text-accent-blue py-2">Visa Processing</a>
-            <a href="import.html" class="block text-slate-800 hover:text-accent-blue py-2">Import</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-[url('https://placehold.co/1920x1080/8B4513/f1faee?text=Streamlined+Visa+Services')] bg-cover bg-center h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
+    <section class="relative bg-home-hero bg-cover bg-center h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
         <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
         <div class="relative text-white p-6">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Global Travel Made Simple</h1>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Welcome to Cool Samurai</h1>
             <p class="text-lg md:text-2xl font-light max-w-3xl mx-auto">
-                Your trusted partner for efficient and reliable visa processing. 
+                Discover a world of exquisite flavors, seamless services, and premium imports.
             </p>
         </div>
     </section>
 
-    <!-- Visa Processing Section -->
+    <!-- Main Body Sections -->
     <main class="container mx-auto px-4 py-16 md:py-24">
-        <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-accent-blue mb-4">Countries We Serve</h2>
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-                We handle visa applications for a wide range of international destinations.
-            </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            <!-- Country 1 -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-                <img src="https://imgs.search.brave.com/LhuVt7OdTW_JpYA50HBGWfuAwnNMO5KjzxWV8ghXZp0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM5/MDU2NDQyMS9waG90/by9mbGFnLW9mLWph/cGFuLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1oX3RLV1NS/eGdPZEFlcy1oZUxD/Z1RFdzUzRlVGeW1J/VFU3andGY0tDMmtv/PQ" alt="Japan Flag" class="mx-auto w-20 h-14 mb-4 rounded-md">
-                <h3 class="text-2xl font-bold text-slate-800">Japan</h3>
-            </div>
-            <!-- Country 2 -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/150x100/f1faee/457b9d?text=Flag" alt="USA Flag" class="mx-auto w-20 h-14 mb-4 rounded-md">
-                <h3 class="text-2xl font-bold text-slate-800">USA</h3>
-            </div>
-            <!-- Country 3 -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/150x100/f1faee/457b9d?text=Flag" alt="UK Flag" class="mx-auto w-20 h-14 mb-4 rounded-md">
-                <h3 class="text-2xl font-bold text-slate-800">UK</h3>
-            </div>
-            <!-- Country 4 -->
-            <div class="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-                <img src="https://placehold.co/150x100/f1faee/457b9d?text=Flag" alt="Canada Flag" class="mx-auto w-20 h-14 mb-4 rounded-md">
-                <h3 class="text-2xl font-bold text-slate-800">Canada</h3>
-            </div>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="bg-white p-8 rounded-2xl shadow-lg mt-12 text-center">
-            <h3 class="text-3xl font-bold text-accent-blue mb-4">Contact Our Visa Experts</h3>
-            <p class="text-lg text-slate-600 mb-6">
-                For detailed information on visa requirements and to begin your application, please reach out to us.
-            </p>
-            <p class="text-xl font-medium text-slate-800">Email: visa@coolsamurai.com</p>
-            <p class="text-xl font-medium text-slate-800">Phone: (123) 456-7890</p>
+        <!-- Section Cards -->
+        <div class="flex flex-col space-y-8 md:space-y-12">
+            <!-- Restaurant Card -->
+            <a href="import.html" class="group block bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                <div class="h-70 overflow-hidden rounded-t-2xl">
+                    <img src="https://img.freepik.com/premium-photo/business-logistic-import-export-transport-industry-transportation-logistic-network-distribution-growth-container-cargo-ship-trucks-industrial-cargo-freight-shipping_10221-42574.jpg?semt=ais_hybrid&w=740" alt="Restaurant Interior" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                </div>
+                <div class="p-8 text-center section-height">
+                    <h2 class="text-3xl font-extrabold text-accent-blue mb-4">Import Export</h2>
+                    <p class="text-lg text-slate-600">Experience seamless import and export services tailored to your business needs.</p>
+                </div>
+            </a>
+            <!-- Visa Processing Card -->
+            <a href="consultation.html" class="group block bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                <div class="h-70 overflow-hidden rounded-t-3xl">
+                    <img src="https://thumbs.dreamstime.com/b/consulting-businessman-hand-holding-44930662.jpg" alt="Visa Application" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                </div>
+                <div class="p-8 text-center section-height">
+                    <h2 class="text-3xl font-extrabold text-accent-blue mb-4">Business consultation</h2>
+                    <p class="text-lg text-slate-600">Effortlessly manage your business needs with our expert guidance and reliable services.</p>
+                </div>
+            </a>
+            <!-- Import Card -->
+            <a href="unknown.html" class="group block bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+                <div class="h-70 overflow-hidden rounded-t-3xl">
+                    <img src="https://img.freepik.com/free-vector/creative-404-error-design_23-2147735309.jpg?semt=ais_hybrid&w=740&q=80" alt="Importing Goods" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out">
+                </div>
+                <div class="p-8 text-center section-height">
+                    <h2 class="text-3xl font-extrabold text-accent-blue mb-4">Unknown Services</h2>
+                    <p class="text-lg text-slate-600">services unknown</p>
+                </div>
+            </a>
         </div>
     </main>
 

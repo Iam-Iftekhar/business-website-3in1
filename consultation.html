@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Samurai - Import</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Cool Samurai - Business Consultation Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
         .accent-blue { background-color: #457b9d; }
         .hover\:accent-blue-dark:hover { background-color: #37637d; }
         .text-accent-blue { color: #457b9d; }
-        .bg-import-hero { background-image: url('https://placehold.co/1920x1080/6A5ACD/f1faee?text=Import+Services'); }
+        .bg-business-hero { background-image: url('https://placehold.co/1920x1080/457b9d/f1faee?text=Business+Consulting'); }
         .ninja-logo {
             filter: invert(1);
         }
@@ -21,22 +20,18 @@
 </head>
 <body class="bg-[#f1faee] text-slate-800">
 
-    <!-- Header (Same for all pages) -->
     <header class="bg-[#f1faee] text-[#457b9d] py-6 px-4 md:px-8 sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto flex items-center justify-between">
-            <!-- Logo and Name -->
             <div class="flex items-center space-x-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-slate-800 ninja-logo" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm-1.892 14.502c-.104.385-.183.743-.236 1.056-.053.313-.08.57-.08.771 0 .201.031.365.093.493s.15.228.257.29c.107.062.228.093.364.093.134 0 .26-.032.378-.095.117-.063.22-.162.308-.297.088-.135.152-.284.192-.448.041-.164.062-.317.062-.459 0-.175-.027-.372-.082-.591-.055-.219-.13-.427-.225-.623-.095-.196-.214-.37-.354-.521-.141-.151-.299-.272-.475-.362-.176-.09-.37-.156-.583-.198-.212-.042-.428-.063-.646-.063-.221 0-.441.026-.66.078-.22.052-.42.128-.598.228-.178.1-.33.22-.456.36-.126.14-.22.3-.284.479-.064.179-.096.367-.096.564 0 .197.032.394.096.591.064.197.147.382.25.555.103.173.23.328.38.467.15.138.318.252.503.342.185.09.38.156.586.198.207.042.417.063.633.063.221 0 .44-.026.657-.078.217-.052.417-.128.598-.228.181-.1.334-.22.457-.36.124-.14.218-.3.282-.479.064-.179.096-.367.096-.564 0-.197-.032-.394-.096-.591-.064-.197-.147-.382-.25-.555-.103-.173-.23-.328-.38-.467-.15-.138-.318-.252-.503-.342-.185-.09-.38-.156-.586-.198-.207-.042-.417-.063-.633-.063-.356 0-.67.06-1.02.179zM12 11c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></svg>
                 <a href="index.html" class="text-3xl font-extrabold tracking-widest text-[#457b9d]">COOL SAMURAI</a>
             </div>
-            <!-- Nav Links -->
             <div class="hidden md:flex items-center space-x-8 text-lg font-medium">
                 <a href="index.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Home</a>
                 <a href="restaurant.html" class="text-slate-800 hover:text-accent-blue transition-colors duration-300">Restaurant</a>
                 <a href="businesses.html" class="block text-slate-800 hover:text-accent-blue py-2">Businesses</a>
             </div>
-            <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-slate-800 hover:text-accent-blue focus:outline-none">
                     <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,82 +40,86 @@
                 </button>
             </div>
         </div>
-        <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4 text-center">
             <a href="index.html" class="block text-slate-800 hover:text-accent-blue py-2">Home</a>
             <a href="restaurant.html" class="block text-slate-800 hover:text-accent-blue py-2">Restaurant</a>
             <a href="businesses.html" class="block text-slate-800 hover:text-accent-blue py-2">Businesses</a>
-
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-[url('https://placehold.co/1920x1080/6A5ACD/f1faee?text=Global+Sourcing')] bg-cover bg-center h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
+    <section class="relative bg-business-hero bg-cover bg-center h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
         <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
         <div class="relative text-white p-6">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Seamless Global Importing</h1>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Strategic Business Consulting</h1>
             <p class="text-lg md:text-2xl font-light max-w-3xl mx-auto">
-                Connecting you to the world with high-quality goods and reliable service.
+                Guiding your business to new heights with expert strategy and actionable insights.
             </p>
         </div>
     </section>
 
-    <!-- Import Section -->
     <main class="container mx-auto px-4 py-16 md:py-24">
         <div class="text-center mb-12">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-accent-blue mb-4">Our Import System</h2>
-            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-                We are experts in sourcing and importing unique products to meet a variety of needs.
+            <h2 class="text-4xl md:text-5xl font-extrabold text-accent-blue mb-4">Our Core Services</h2>
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+                We provide a full spectrum of consulting services tailored to your business's unique needs.
             </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-accent-blue mb-3">Business Strategy</h3>
+                <p class="text-slate-600">
+                    Develop a clear roadmap for growth. We help you define goals, identify opportunities, and build a sustainable business model.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-accent-blue mb-3">Operational Efficiency</h3>
+                <p class="text-slate-600">
+                    Streamline your processes to reduce costs and increase productivity. We find inefficiencies and implement effective solutions.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-accent-blue mb-3">Financial Planning</h3>
+                <p class="text-slate-600">
+                    Manage your finances with confidence. We offer expert advice on budgeting, investment strategies, and maximizing profitability.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-accent-blue mb-3">Digital Transformation</h3>
+                <p class="text-slate-600">
+                    Integrate new technology seamlessly. We guide you through the process of adopting digital tools to stay competitive.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-accent-blue mb-3">Market Analysis</h3>
+                <p class="text-slate-600">
+                    Understand your position in the market. We provide deep insights into market trends, competitors, and consumer behavior.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-bold text-accent-blue mb-3">Change Management</h3>
+                <p class="text-slate-600">
+                    Navigate organizational changes smoothly. We help you prepare your team for new processes and ensure a successful transition.
+                </p>
+            </div>
         </div>
 
-        <div class="bg-white p-8 rounded-2xl shadow-lg mb-12">
-            <h3 class="text-3xl font-bold text-slate-800 mb-4">What We Import</h3>
-            <p class="text-lg text-slate-600 mb-4">
-                Cool Samurai specializes in importing premium, authentic goods directly from Japan, including:
-            </p>
-            <ul class="list-disc list-inside text-lg text-slate-600 space-y-2 pl-4">
-                <li>High-grade Japanese Wagyu beef and seafood.</li>
-                <li>Rare sake, whiskey, and craft beer.</li>
-                <li>Artisanal kitchenware and ceramics.</li>
-                <li>Specialized food and beverage equipment.</li>
-            </ul>
-        </div>
-        
-        <div class="bg-white p-8 rounded-2xl shadow-lg">
-            <h3 class="text-3xl font-bold text-slate-800 mb-4">What You Can Import from Us</h3>
-            <p class="text-lg text-slate-600 mb-4">
-                Our network allows us to help you source and import a variety of goods, providing a reliable and efficient supply chain. We can assist with:
-            </p>
-            <ul class="list-disc list-inside text-lg text-slate-600 space-y-2 pl-4">
-                <li>Bespoke culinary ingredients for your business.</li>
-                <li>Custom orders for authentic Japanese furniture and decor.</li>
-                <li>A wide range of electronic and industrial goods.</li>
-                <li>And many more products tailored to your specific needs.</li>
-            </ul>
-        </div>
-
-        <!-- Contact Section -->
         <div class="bg-white p-8 rounded-2xl shadow-lg mt-12 text-center">
-            <h3 class="text-3xl font-bold text-accent-blue mb-4">Get in Touch with Our Import Team</h3>
+            <h3 class="text-3xl font-bold text-accent-blue mb-4">Ready to Grow Your Business?</h3>
             <p class="text-lg text-slate-600 mb-6">
-                To discuss your import needs and discover how we can help, please contact us.
+                Our experts are ready to help you unlock your business's full potential. Contact us today for a free consultation.
             </p>
-            <p class="text-xl font-medium text-slate-800">Email: import@coolsamurai.com</p>
+            <p class="text-xl font-medium text-slate-800">Email: business@coolsamurai.com</p>
             <p class="text-xl font-medium text-slate-800">Phone: (123) 456-7890</p>
         </div>
     </main>
 
-    <!-- Footer (Same for all pages) -->
     <footer class="bg-slate-900 text-slate-400 py-12 mt-20 rounded-t-3xl">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <!-- Left Section: Location -->
             <div>
                 <h3 class="text-2xl font-bold text-accent-blue mb-4">Location</h3>
                 <p class="text-slate-500 mb-2">123 Samurai St, Tokyo, Japan 100-0005</p>
                 <p class="text-slate-500">Phone: (123) 456-7890</p>
             </div>
-            <!-- Middle Section: Payment Gateway Logos -->
             <div class="flex flex-col items-center justify-center">
                 <h3 class="text-2xl font-bold text-accent-blue mb-4">We Accept</h3>
                 <div class="flex space-x-4">
@@ -129,7 +128,6 @@
                     <img src="https://placehold.co/60x40/FFFFFF/457b9d?text=AMEX" alt="American Express" class="h-10 w-auto rounded-lg">
                 </div>
             </div>
-            <!-- Right Section: Contact Info & Social Media -->
             <div class="text-center md:text-right">
                 <h3 class="text-2xl font-bold text-accent-blue mb-4">Contact Us</h3>
                 <p class="text-slate-500 mb-2">Email: info@coolsamurai.com</p>
@@ -148,7 +146,6 @@
         </div>
     </footer>
 
-    <!-- Script for mobile menu toggle -->
     <script>
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
